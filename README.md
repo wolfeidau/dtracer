@@ -9,29 +9,31 @@ The name of this library is a tribute to all the enterprise software companies, 
 ## Getting Started
 Install the module with: `npm install enterprise-application-insight-suite`
 
-```javascript
-var enterprise_application_insight_suite = require('enterprise-application-insight-suite');
-enterprise_application_insight_suite.awesome(); // "awesome"
-```
-
 ## Documentation
 
 This library will optionally load the dtrace provider and provides a number of utility methods for adding and firing probes.
 
 
+The default tracer is accessible through the tracer module directly.
 ```
-var eais = require('enterprise-application-insight-suite')
+var tracer = require('enterprise-application-insight-suite')
 
-eais.configure(
-    "node-worker-farm", // the name which will be used to register the provider
-    "probes" : [
-        "startChild": ["int", "char*"],
-        "stopChild": ["int", "char*"],
-        "onExit": ["int", "char*"]
-    ]
-)
+// configures an application with DTrace used as the default provider
+tracer.configureApp("node-worker-farm")
+    .addProbe("startChild", ["int", "char*"])
+    .addProbe("stopChild", ["int", "char*"])
+    .addProbe("onExit", ["int", "char*"])
 
-eais.startChild(123, "cool new child") // fire a probe with the previously specified parameters
+// configures an application with DTrace used as the default provider
+tracer.configureApp("node-worker-farm")
+    .add(tracer.provider.Console)
+    .add(tracer.provider.DTrace)
+    .addProbe("startChild", ["int", "char*"])
+    .addProbe("stopChild", ["int", "char*"])
+    .addProbe("onExit", ["int", "char*"])
+
+
+tracer.probes.startChild(123, "cool new child") // fire a probe with the previously specified parameters
 
 ```
 
