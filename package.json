@@ -1,0 +1,42 @@
+{
+    "name":"enterprise-application-insight-suite",
+    "description":"Library for event tracing using a number of other libraries which can be enabled or disabled as required.",
+    "version":"0.1.0",
+    "homepage":"https://github.com/wolfeidau/enterprise-application-insight-suite",
+    "author":{
+        "name":"Mark Wolfe",
+        "email":"mark@wolfe.id.au",
+        "url":"http://www.wolfe.id.au"
+    },
+    "repository":{
+        "type":"git",
+        "url":"git://github.com/wolfeidau/enterprise-application-insight-suite.git"
+    },
+    "bugs":{
+        "url":"https://github.com/wolfeidau/enterprise-application-insight-suite/issues"
+    },
+    "licenses":[
+        {
+            "type":"MIT",
+            "url":"https://github.com/wolfeidau/enterprise-application-insight-suite/blob/master/LICENSE-MIT"
+        }
+    ],
+    "main":"lib/enterprise-application-insight-suite",
+    "engines":{
+        "node":">= 0.6.0"
+    },
+    "scripts":{
+        "test":"grunt test"
+    },
+    "dependencies":{
+
+    },
+    "devDependencies":{
+        "dtrace-provider":"*",
+        "grunt-simple-mocha":"~0.2.0",
+        "mocha":"~1.6.0",
+        "should":"~1.2.0",
+        "grunt":"~0.3.17"
+    },
+    "keywords":[]
+}
