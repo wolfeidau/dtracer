@@ -1,7 +1,7 @@
 {
     "name":"enterprise-application-insight-suite",
     "description":"Library for event tracing using a number of other libraries which can be enabled or disabled as required.",
-    "version":"0.1.0",
+    "version":"0.1.0-2013-enterprise-build0001",
     "homepage":"https://github.com/wolfeidau/enterprise-application-insight-suite",
     "author":{
         "name":"Mark Wolfe",

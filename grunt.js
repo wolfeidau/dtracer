@@ -1,4 +1,3 @@
-'use strict';
 module.exports = function (grunt) {
 
     // Project configuration.
@@ -16,6 +15,7 @@ module.exports = function (grunt) {
         },
         jshint:{
             options:{
+                asi:true,
                 curly:true,
                 eqeqeq:true,
                 immed:true,
@@ -27,6 +27,7 @@ module.exports = function (grunt) {
                 boss:true,
                 eqnull:true,
                 node:true,
+                "strict": false,
                 "predef":[
                     "describe", // Used by mocha
                     "it", // Used by mocha
@@ -53,14 +54,14 @@ module.exports = function (grunt) {
             }
         }
 
-    });
+    })
 
-    grunt.loadNpmTasks('grunt-simple-mocha');
+    grunt.loadNpmTasks('grunt-simple-mocha')
 
     // Default task.
-    grunt.registerTask('default', ['lint', 'simplemocha']);
+    grunt.registerTask('default', ['lint', 'simplemocha'])
 
     // override the default test target
-    grunt.registerTask('test', 'simplemocha');
+    grunt.registerTask('test', 'simplemocha')
 
 };

@@ -1,2 +1,1 @@
-'use strict';
-var enterprise_application_insight_suite = require('../lib/enterprise-application-insight-suite.js');
+var enterprise_application_insight_suite = require('../lib/enterprise-application-insight-suite.js')
