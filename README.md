@@ -20,7 +20,7 @@ This library will optionally load the dtrace provider and provides a number of u
 
 
 ```
-var eais = require('enterprise-application-insight-suite');
+var eais = require('enterprise-application-insight-suite')
 
 eais.configure(
     "node-worker-farm", // the name which will be used to register the provider
@@ -29,9 +29,9 @@ eais.configure(
         "stopChild": ["int", "char*"],
         "onExit": ["int", "char*"]
     ]
-);
+)
 
-eais.startChild(123, "cool new child"); // fire a probe with the previously specified parameters
+eais.startChild(123, "cool new child") // fire a probe with the previously specified parameters
 
 ```
 
