@@ -1,18 +1,13 @@
 var tracer = require('../lib/dtracer.js')
     , should = require('should')
+    , pkginfo = require('pkginfo')(module)
 
 describe('tracer', function () {
 
-    describe('version', function () {
+   describe('add provider', function () {
 
         it('should exist', function () {
-            should.exist(tracer.version)
-        })
-    })
-
-    describe('add provider', function () {
-
-        it('should exist', function () {
+            tracer.create(module.exports.name)
             should.exist(tracer.dtraceProvider)
         })
 

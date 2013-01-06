@@ -1,7 +1,7 @@
 {
     "name":"dtracer",
     "description":"Library for event tracing using a dtrace, note returns a dummy provider if not available.",
-    "version":"0.1.0",
+    "version":"0.1.1",
     "homepage":"https://github.com/wolfeidau/dtracer",
     "author":{
         "name":"Mark Wolfe",
@@ -29,7 +29,6 @@
         "test":"grunt test"
     },
     "dependencies":{
-        "pkginfo":"*"
     },
     "devDependencies":{
         "dtrace-provider":"*",
