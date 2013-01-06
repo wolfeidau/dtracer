@@ -17,6 +17,7 @@ module.exports = function (grunt) {
             options:{
                 asi:true,
                 curly:true,
+                laxcomma: true,
                 eqeqeq:true,
                 immed:true,
                 latedef:true,

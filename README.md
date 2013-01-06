@@ -19,18 +19,18 @@ The default tracer is accessible through the tracer module directly.
 var tracer = require('enterprise-application-insight-suite')
 
 // configures an application with DTrace used as the default provider
-tracer.configureApp("node-worker-farm")
-    .addProbe("startChild", ["int", "char*"])
-    .addProbe("stopChild", ["int", "char*"])
-    .addProbe("onExit", ["int", "char*"])
+tracer
+    .addProbe("startChild", "int", "char*")
+    .addProbe("stopChild", "int", "char*")
+    .addProbe("onExit", "int", "char*")
 
 // configures an application with DTrace used as the default provider
 tracer.configureApp("node-worker-farm")
-    .add(tracer.provider.Console)
-    .add(tracer.provider.DTrace)
-    .addProbe("startChild", ["int", "char*"])
-    .addProbe("stopChild", ["int", "char*"])
-    .addProbe("onExit", ["int", "char*"])
+    .addProvider(tracer.provider.Console)
+    .addProvider(tracer.provider.DTrace)
+    .addProbe("startChild", "int", "char*")
+    .addProbe("stopChild", "int", "char*")
+    .addProbe("onExit", "int", "char*")
 
 
 tracer.probes.startChild(123, "cool new child") // fire a probe with the previously specified parameters
