@@ -1,6 +1,6 @@
 {
     "name":"dtracer",
-    "description":"Library for event tracing using a number of other libraries which can be enabled or disabled as required.",
+    "description":"Library for event tracing using a dtrace, note returns a dummy provider if not available.",
     "version":"0.1.0",
     "homepage":"https://github.com/wolfeidau/dtracer",
     "author":{
