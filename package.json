@@ -1,8 +1,8 @@
 {
-    "name":"enterprise-application-insight-suite",
+    "name":"dtracer",
     "description":"Library for event tracing using a number of other libraries which can be enabled or disabled as required.",
-    "version":"0.1.0-2013-enterprise-build0001",
-    "homepage":"https://github.com/wolfeidau/enterprise-application-insight-suite",
+    "version":"0.1.0",
+    "homepage":"https://github.com/wolfeidau/dtracer",
     "author":{
         "name":"Mark Wolfe",
         "email":"mark@wolfe.id.au",
@@ -10,18 +10,18 @@
     },
     "repository":{
         "type":"git",
-        "url":"git://github.com/wolfeidau/enterprise-application-insight-suite.git"
+        "url":"git://github.com/wolfeidau/dtracer.git"
     },
     "bugs":{
-        "url":"https://github.com/wolfeidau/enterprise-application-insight-suite/issues"
+        "url":"https://github.com/wolfeidau/dtracer/issues"
     },
     "licenses":[
         {
             "type":"MIT",
-            "url":"https://github.com/wolfeidau/enterprise-application-insight-suite/blob/master/LICENSE-MIT"
+            "url":"https://github.com/wolfeidau/dtracer/blob/master/LICENSE-MIT"
         }
     ],
-    "main":"lib/enterprise-application-insight-suite",
+    "main":"lib/dtracer",
     "engines":{
         "node":">= 0.6.0"
     },

@@ -1,4 +1,4 @@
-var tracer = require('../lib/enterprise-application-insight-suite.js')
+var tracer = require('../lib/dtracer.js')
     , should = require('should')
 
 describe('tracer', function () {
