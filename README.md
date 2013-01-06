@@ -6,6 +6,8 @@ The aim of this library is to provide a simple way of integrating dtrace or alte
 
 The name of this library is a tribute to all the enterprise software companies, and creative people behind the product names they dream up.
 
+[![Build Status](https://secure.travis-ci.org/wolfeidau/enterprise-application-insight-suite.png)](http://travis-ci.org/wolfeidau/enterprise-application-insight-suite)
+
 ## Getting Started
 Install the module with: `npm install enterprise-application-insight-suite`
 
